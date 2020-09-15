@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "347575193379",
+    "firebase_url": "https://shwalpo.firebaseio.com",
+    "project_id": "shwalpo",
+    "storage_bucket": "shwalpo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347575193379:android:33985c33e0cc5bb32e4696",
+        "android_client_info": {
+          "package_name": "neel.com.shwalpo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347575193379-ar0j6frbi8r2ir7frvo72mg7jelhujts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs70Wr1OCP2hCTUkXxSwaSCNmPhwqDUEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347575193379-ar0j6frbi8r2ir7frvo72mg7jelhujts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347575193379:android:2c9527d6ea9bbcfa2e4696",
+        "android_client_info": {
+          "package_name": "neel.com.shwalpomerchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347575193379-ar0j6frbi8r2ir7frvo72mg7jelhujts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs70Wr1OCP2hCTUkXxSwaSCNmPhwqDUEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347575193379-ar0j6frbi8r2ir7frvo72mg7jelhujts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
