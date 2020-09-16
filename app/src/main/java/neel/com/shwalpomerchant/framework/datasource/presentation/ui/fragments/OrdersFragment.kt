@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.ui.fragments
+package neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,11 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import neel.com.shwalpomerchant.R
+import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.OrdersViewModel
 
 class OrdersFragment : Fragment() {
 
     companion object {
-        fun newInstance() = OrdersFragment()
+        fun newInstance() =
+            OrdersFragment()
     }
 
     private lateinit var viewModel: OrdersViewModel

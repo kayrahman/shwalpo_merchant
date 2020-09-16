@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="neel.com.shwalpomerchant.ui.fragments.DashboardFragment"
+        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.DashboardFragment"
         android:label="dashboard_fragment"
         tools:layout="@layout/dashboard_fragment" >
         <action
@@ -20,11 +20,11 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="neel.com.shwalpomerchant.ui.fragments.LoginFragment"
+        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.LoginFragment"
         android:label="LoginFragment" />
     <fragment
         android:id="@+id/ordersFragment"
-        android:name="neel.com.shwalpomerchant.ui.fragments.OrdersFragment"
+        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.OrdersFragment"
         android:label="orders_fragment"
         tools:layout="@layout/orders_fragment" />
 </navigation>

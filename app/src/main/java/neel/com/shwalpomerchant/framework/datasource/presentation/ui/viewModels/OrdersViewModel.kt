@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.ui.fragments
+package neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels
 
 import androidx.lifecycle.ViewModel
 
