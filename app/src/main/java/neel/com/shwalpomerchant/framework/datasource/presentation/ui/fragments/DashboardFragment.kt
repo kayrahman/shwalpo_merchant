@@ -43,6 +43,8 @@ class DashboardFragment : Fragment() {
 
     private fun observeViewModel() {
 
+
+        // handles login
         viewModel.authenticationState.observe(viewLifecycleOwner, Observer { authenticationState ->
             when (authenticationState) {
                 AUTHENTICATED -> {
