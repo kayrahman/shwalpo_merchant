@@ -16,18 +16,9 @@
             >
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                >
-
-
-
-            </androidx.cardview.widget.CardView>
+            <include
+                android:id="@+id/navItem"
+                layout="@layout/item_navigation_menu"/>
 
 
 
