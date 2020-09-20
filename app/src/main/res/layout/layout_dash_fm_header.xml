@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/bg_cd"
+    >
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/space8dp"
+        android:layout_marginStart="@dimen/space8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_dark" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        style="@style/dashboardHeaderItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_status"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toTopOf="@+id/iv_user"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="John Doe"
+        android:textSize="@dimen/text16sp"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+        app:layout_constraintStart_toEndOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        tools:text="Pending"
+        style="@style/dashboardHeaderItemText"
+        android:background="@drawable/bg_status_lime_green"
+        android:paddingStart="@dimen/space8dp"
+        android:paddingEnd="@dimen/space8dp"
+        android:textAllCaps="true"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+
+    <style name="dashboardHeaderItemText">
+        <!-- Customize your theme here. -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+
+    <style name="navItemText">
+        <!-- Customize your theme here. -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

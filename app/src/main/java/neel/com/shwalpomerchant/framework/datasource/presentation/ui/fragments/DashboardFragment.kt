@@ -47,7 +47,22 @@ class DashboardFragment : Fragment() {
      fun navigationItemCLick(){
         val nav_item_listener = object:INavigationMenuListeners{
             override fun onNavigationMenuItemClick(v: View) {
-                Toast.makeText(requireContext(), "nav_item_click : ${v.toString()}",Toast.LENGTH_LONG).show()
+            when(v.id){
+                R.id.ll_order -> {
+                    //go to order fragment
+                    findNavController().navigate(R.id.action_dashboardFragment_to_ordersFragment)
+                }
+
+                R.id.ll_newsfeed ->{
+
+                }
+
+                R.id.ll_settings ->{
+                    findNavController().navigate(R.id.action_dashboardFragment_to_settingsFragment)
+                }
+
+
+            }
             }
 
         }

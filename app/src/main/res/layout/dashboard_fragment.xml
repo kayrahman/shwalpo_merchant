@@ -9,20 +9,49 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_header"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="150dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/cv_nav_items"
+            app:cardCornerRadius="4dp"
+            android:elevation="16dp"
+            android:layout_marginBottom="@dimen/space8dp"
+            >
+
+            <include layout="@layout/layout_dash_fm_header"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_nav_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_header"
+            app:cardCornerRadius="4dp"
+            android:elevation="4dp"
+            android:layout_marginTop="@dimen/space8dp"
+
             >
 
 
             <include
                 android:id="@+id/navItem"
-                layout="@layout/item_navigation_menu"/>
+                layout="@layout/item_navigation_menu"
+                app:layout_constraintBottom_toTopOf="@+id/navItem"
+                app:layout_constraintVertical_chainStyle="packed" />
 
 
+        </androidx.cardview.widget.CardView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </layout>

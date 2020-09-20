@@ -16,6 +16,9 @@
             app:destination="@id/ordersFragment"
             app:launchSingleTop="false"
             app:popUpTo="@id/dashboardFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
     </fragment>
 
     <fragment
@@ -27,4 +30,9 @@
         android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.OrdersFragment"
         android:label="orders_fragment"
         tools:layout="@layout/orders_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.SettingsFragment"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
 </navigation>
