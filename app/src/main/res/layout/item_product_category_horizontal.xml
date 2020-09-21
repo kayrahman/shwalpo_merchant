@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.nkr.bazarano.ui.adapter.viewModel.CategoryImageListViewModel" />
+            type="neel.com.shwalpomerchant.customer.ui.viewModel.ProductCategoryAdapterViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,20 +28,12 @@
         android:layout_margin="@dimen/space8dp"
         >
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/iv_category_item"
-            android:layout_width="@dimen/defaultIconSizeMLarge"
-            android:layout_height="@dimen/defaultIconSizeMLarge"
-            firestoreImageUrl="@{viewModel.img}"
-
-            />
 
         <TextView
             android:id="@+id/tv_category_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{viewModel.categoryName}"
-            style="@style/Text.Sub"
             android:gravity="center"
 
             />

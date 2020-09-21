@@ -1,11 +1,14 @@
 package neel.com.shwalpomerchant.customer.adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import neel.com.shwalpomerchant.R
 import neel.com.shwalpomerchant.customer.model.CategoryItem
+import neel.com.shwalpomerchant.customer.model.CategoryItems
 
 import neel.com.shwalpomerchant.customer.model.CustomerHomeModelType
 import neel.com.shwalpomerchant.customer.model.ICustomerHomeModel
@@ -29,7 +32,7 @@ class CustomerHomeModelAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>()
                         LayoutInflater.from(parent.context),
                         R.layout.layout_product_category, parent, false)
 
-                      CategoriesViewHolder(binding)
+                      CategoriesViewHolder(binding,parent.context)
                 }
 
               else ->{
@@ -37,7 +40,8 @@ class CustomerHomeModelAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>()
                       LayoutInflater.from(parent.context),
                       R.layout.layout_product_category, parent, false)
 
-                  CategoriesViewHolder(binding)
+                  CategoriesViewHolder(binding,parent.context
+                  )
               }
 
 
@@ -52,7 +56,7 @@ class CustomerHomeModelAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>()
             when(holder.itemViewType){
                 CATEGORY_ITEM -> {
                     val viewHolder = holder as CategoriesViewHolder
-                    viewHolder.bind(list as List<CategoryItem>)
+                    viewHolder.bind(list[position] as CategoryItems)
                 }
             }
     }
@@ -70,12 +74,16 @@ class CustomerHomeModelAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>()
     }
 
 
-    class CategoriesViewHolder(val binding : LayoutProductCategoryBinding) : RecyclerView.ViewHolder(binding.root){
+    class CategoriesViewHolder(val binding : LayoutProductCategoryBinding,val context:Context) : RecyclerView.ViewHolder(binding.root){
         val categoryViewModel = ProductCategoryViewModel()
 
-        fun bind(categoryItems : List<CategoryItem> ){
+        fun bind(categoryItems : CategoryItems ){
             binding.viewModel = categoryViewModel
             categoryViewModel.bind(categoryItems)
+
+            binding.rvItemCategory.layoutManager = LinearLayoutManager(context)
+            binding.rvItemCategory.adapter = categoryViewModel.prodCategoryAdapter
+
         }
     }
 

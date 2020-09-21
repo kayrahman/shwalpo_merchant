@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import neel.com.shwalpomerchant.R
 import neel.com.shwalpomerchant.customer.model.CategoryItem
+import neel.com.shwalpomerchant.customer.ui.viewModel.ProductCategoryAdapterViewModel
 import neel.com.shwalpomerchant.databinding.ItemProductCategoryHorizontalBinding
 
 class ProductCategoryAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -34,9 +35,10 @@ class ProductCategoryAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     }
 
     class ProductCategoryViewHolder(val binding:ItemProductCategoryHorizontalBinding):RecyclerView.ViewHolder(binding.root){
-
+        private val productCategoryAdapterViewModel = ProductCategoryAdapterViewModel()
         fun bind(category:CategoryItem){
-
+            productCategoryAdapterViewModel.bind(category)
+            binding.viewModel = productCategoryAdapterViewModel
         }
     }
 
