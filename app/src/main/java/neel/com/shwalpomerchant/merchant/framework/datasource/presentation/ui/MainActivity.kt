@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.framework.datasource.presentation.ui
+package neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui
 
 import android.os.Bundle
 import android.view.View

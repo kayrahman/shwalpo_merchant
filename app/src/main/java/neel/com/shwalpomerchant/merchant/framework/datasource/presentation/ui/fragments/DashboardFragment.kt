@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments
+package neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments
 
 import android.graphics.Color
 import android.os.Bundle
@@ -22,10 +22,10 @@ import com.github.mikephil.charting.utils.ColorTemplate
 import com.github.mikephil.charting.utils.MPPointF
 import kotlinx.android.synthetic.main.dashboard_fragment.view.*
 import neel.com.shwalpomerchant.R
-import neel.com.shwalpomerchant.business.listeners.INavigationMenuListeners
 import neel.com.shwalpomerchant.databinding.DashboardFragmentBinding
-import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel
-import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel.AuthenticationState.AUTHENTICATED
+import neel.com.shwalpomerchant.merchant.business.listeners.INavigationMenuListeners
+import neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel
+import neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel.AuthenticationState.AUTHENTICATED
 import java.util.*
 
 class DashboardFragment : Fragment() {
@@ -183,7 +183,8 @@ class DashboardFragment : Fragment() {
     }
 
     fun navigationItemCLick(){
-        val nav_item_listener = object:INavigationMenuListeners{
+        val nav_item_listener = object:
+            INavigationMenuListeners {
             override fun onNavigationMenuItemClick(v: View) {
             when(v.id){
                 R.id.ll_order -> {
@@ -197,6 +198,10 @@ class DashboardFragment : Fragment() {
 
                 R.id.ll_settings ->{
                     findNavController().navigate(R.id.action_dashboardFragment_to_settingsFragment)
+                }
+
+                R.id.customerApp ->{
+                    findNavController().navigate(R.id.action_dashboardFragment_to_customerHomeFragment)
                 }
 
 

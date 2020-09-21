@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package neel.com.shwalpomerchant.framework.datasource.network
+package neel.com.shwalpomerchant.merchant.framework.datasource.network
 
 import android.util.Log
 import androidx.lifecycle.LiveData

@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments
+package neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -13,8 +13,8 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import neel.com.shwalpomerchant.R
 import neel.com.shwalpomerchant.databinding.LoginFragmentBinding
-import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel
-import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel.AuthenticationState.*
+import neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel
+import neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.viewModels.DashboardViewModel.AuthenticationState.*
 
 class LoginFragment : Fragment() {
 

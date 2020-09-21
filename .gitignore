@@ -12,3 +12,9 @@
 /captures
 .externalNativeBuild
 .cxx
+output.json
+google-services.json
+libs/
+sampledata/
+app/libs/
+app/sampledata/

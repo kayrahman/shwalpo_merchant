@@ -10,7 +10,7 @@
 
         <variable
             name="navigationMenuHandler"
-            type="neel.com.shwalpomerchant.business.listeners.INavigationMenuListeners" />
+            type="neel.com.shwalpomerchant.merchant.business.listeners.INavigationMenuListeners" />
 
     </data>
 
@@ -186,7 +186,7 @@
             android:layout_margin="2dp"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+            app:layout_constraintEnd_toStartOf="@+id/customerApp"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/linearLayout5"
             android:onClick="@{(v) -> navigationMenuHandler.onNavigationMenuItemClick(v)}"
@@ -208,7 +208,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout7"
+            android:id="@+id/customerApp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -233,7 +233,7 @@
                 style="@style/navItemText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Issues" />
+                android:text="Customer" />
 
         </LinearLayout>
 
@@ -247,7 +247,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+            app:layout_constraintStart_toEndOf="@+id/customerApp"
             android:onClick="@{(v) -> navigationMenuHandler.onNavigationMenuItemClick(v)}"
 
             >

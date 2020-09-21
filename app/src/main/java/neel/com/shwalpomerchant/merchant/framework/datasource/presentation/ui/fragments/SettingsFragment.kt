@@ -1,4 +1,4 @@
-package neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments
+package neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -7,27 +7,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import neel.com.shwalpomerchant.R
-import neel.com.shwalpomerchant.framework.datasource.presentation.ui.viewModels.OrdersViewModel
+import neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.viewModels.SettingsViewModel
 
-class OrdersFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
     companion object {
         fun newInstance() =
-            OrdersFragment()
+            SettingsFragment()
     }
 
-    private lateinit var viewModel: OrdersViewModel
+    private lateinit var viewModel: SettingsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.orders_fragment, container, false)
+        return inflater.inflate(R.layout.settings_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(OrdersViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(SettingsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.DashboardFragment"
+        android:name="neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments.DashboardFragment"
         android:label="dashboard_fragment"
         tools:layout="@layout/dashboard_fragment" >
         <action
@@ -19,20 +19,29 @@
         <action
             android:id="@+id/action_dashboardFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_customerHomeFragment"
+            app:destination="@id/customerHomeFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.LoginFragment"
+        android:name="neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments.LoginFragment"
         android:label="LoginFragment" />
     <fragment
         android:id="@+id/ordersFragment"
-        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.OrdersFragment"
+        android:name="neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments.OrdersFragment"
         android:label="orders_fragment"
         tools:layout="@layout/orders_fragment" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="neel.com.shwalpomerchant.framework.datasource.presentation.ui.fragments.SettingsFragment"
+        android:name="neel.com.shwalpomerchant.merchant.framework.datasource.presentation.ui.fragments.SettingsFragment"
         android:label="settings_fragment"
         tools:layout="@layout/settings_fragment" />
+
+    <fragment
+        android:id="@+id/customerHomeFragment"
+        android:name="neel.com.shwalpomerchant.customer.ui.fragment.CustomerHomeFragment"
+        android:label="customer_home_fragment"
+        tools:layout="@layout/customer_home_fragment" />
 </navigation>
